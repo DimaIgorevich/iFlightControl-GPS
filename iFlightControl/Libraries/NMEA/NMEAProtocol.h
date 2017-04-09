@@ -145,7 +145,7 @@ typedef NS_ENUM(NSInteger, GPVTGGroupSequance) {
     GPVTGGroupSequanceMagneticDeclinationInDegrees  = 3,
     GPVTGGroupSequanceSpeedSOGInKnots               = 4,
     GPVTGGroupSequanceSpeedSOGInKilometersPerHour   = 5,
-    GPVTGGroupSequanceCheckSum                      = 7
+    GPVTGGroupSequanceCheckSum                      = 6
 };
 
 typedef NS_ENUM(NSInteger, GPZDAGroupSequance) {

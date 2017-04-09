@@ -144,7 +144,7 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         ];
     
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
-        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGGA];
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGLL];
     }
 }
 
@@ -176,7 +176,7 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         ];
     
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
-        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGGA];
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGSA];
     }
 }
 
@@ -210,7 +210,7 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         ];
     
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
-        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGGA];
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGSV];
     }
 }
 
@@ -219,28 +219,64 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
 + (void)parseTypeGPRMCData:(NSString *)data withMatches:(NSArray *)matches delegate:(id <NMEAProtocolDelegate> )delegate {
     NSTextCheckingResult *match = [matches firstObject];
     
-    for (NSTextCheckingResult *match in matches) {
-        NSLog(@"type - %@", [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceType]]);
-    }
+    NSArray *result = @[
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceType]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceTimestamp]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceState]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceLatitude]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceVerticalGeography]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceLongitude]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceHorizontalGeography]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceSpeedSOGInKnots]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceCourseDirectionInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceDate]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceMagneticDeclinationInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceMagneticHorizontalGeography]],
+                        [data substringWithRange:[match rangeAtIndex:GPRMCGroupSequanceCheckSum]]
+                        ];
     
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
-        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGGA];
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPRMC];
     }
 }
 
 #pragma mark - GPVTG
 
 + (void)parseTypeGPVTGData:(NSString *)data withMatches:(NSArray *)matches delegate:(id <NMEAProtocolDelegate> )delegate {
-    for (NSTextCheckingResult *match in matches) {
-        NSLog(@"type - %@", [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceType]]);
+    NSTextCheckingResult *match = [matches firstObject];
+
+    NSArray *result = @[
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceType]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceCourseDirectionInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceMagneticDeclinationInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGInKnots]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGInKilometersPerHour]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceCheckSum]]
+                        ];
+    
+    if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPVTG];
     }
 }
 
 #pragma mark - GPZDA
 
 + (void)parseTypeGPZDAData:(NSString *)data withMatches:(NSArray *)matches delegate:(id <NMEAProtocolDelegate> )delegate {
-    for (NSTextCheckingResult *match in matches) {
-        NSLog(@"type - %@", [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceType]]);
+    NSTextCheckingResult *match = [matches firstObject];
+    
+    NSArray *result = @[
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceType]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceTimestampUTC]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceDay]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceMounth]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceYear]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceTimeZoneOffsetFromGMTHours]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceTimeZoneOffsetFromGMTMinutes]],
+                        [data substringWithRange:[match rangeAtIndex:GPZDAGroupSequanceCheckSum]]
+                        ];
+    
+    if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
+        [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPZDA];
     }
 }
 
