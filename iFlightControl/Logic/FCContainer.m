@@ -16,7 +16,7 @@
 
 @implementation FCContainer
 
-+ (id)sharedInstance {
++ (instancetype)sharedInstance {
     static FCContainer *instanceFCContainer = nil;
     static dispatch_once_t once;
     

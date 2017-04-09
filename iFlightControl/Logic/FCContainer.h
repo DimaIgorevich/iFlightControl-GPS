@@ -16,6 +16,6 @@
 
 - (BOOL)isBLEDeviceExist:(FCBLEDevice *)device;
 
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
 
 @end
