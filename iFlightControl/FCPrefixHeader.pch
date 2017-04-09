@@ -29,6 +29,8 @@
 
 #import "FCCatigoriesHeader.h"
 
+#import "FCManagersHeader.h"
+
 #import "FCEngine.h"
 
 #import "FCContainer.h"
