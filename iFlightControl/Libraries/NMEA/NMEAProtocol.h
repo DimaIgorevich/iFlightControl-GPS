@@ -34,8 +34,7 @@ typedef NS_ENUM(NSInteger, GPGGAGroupSequance) {
     GPGGAGroupSequanceGeoidalDifference         = 12,
     GPGGAGroupSequanceUnitOfDifference          = 13,
     GPGGAGroupSequanceAgeOfDifferentialData     = 14,
-    GPGGAGroupSequanceStationIndicator          = 15,
-    GPGGAGroupSequanceCheckSum                  = 16
+    GPGGAGroupSequanceCheckSum                  = 15
 };
 
 typedef NS_ENUM(NSInteger, QualityGPSSignalType) {
@@ -76,11 +75,10 @@ typedef NS_ENUM(NSInteger, GPGSAGroupSequance) {
     GPGSAGroupSequanceSatellitesPRN9  = 12,
     GPGSAGroupSequanceSatellitesPRN10 = 13,
     GPGSAGroupSequanceSatellitesPRN11 = 14,
-    GPGSAGroupSequanceSatellitesPRN12 = 15,
-    GPGSAGroupSequanceFactorPDOP      = 16,
-    GPGSAGroupSequanceFactorHDOP      = 17,
-    GPGSAGroupSequanceFactorVDOP      = 18,
-    GPGSAGroupSequanceCheckSum        = 19
+    GPGSAGroupSequanceFactorPDOP      = 15,
+    GPGSAGroupSequanceFactorHDOP      = 16,
+    GPGSAGroupSequanceFactorVDOP      = 17,
+    GPGSAGroupSequanceCheckSum        = 18
 };
 
 typedef NS_ENUM(NSInteger, GPSMode) {
@@ -98,24 +96,23 @@ typedef NS_ENUM(NSInteger, GPGSVGroupSequance) {
     GPGSVGroupSequanceType                              = 1,
     GPGSVGroupSequanceTotalNumberOfMessages             = 2,
     GPGSVGroupSequanceNumberOfMessage                   = 3,
-    GPGSVGroupSequanceTotalNumberOfVisibleSatellites    = 4,
-    GPGSVGroupSequancePRN1NumberOfSatellites            = 5,
-    GPGSVGroupSequancePRN1HeightDegrees                 = 6,
-    GPGSVGroupSequancePRN1AzimuthDegrees                = 7,
-    GPGSVGroupSequancePRN1SOrNRatio                     = 8,
-    GPGSVGroupSequancePRN2NumberOfSatellites            = 9,
-    GPGSVGroupSequancePRN2HeightDegrees                 = 10,
-    GPGSVGroupSequancePRN2AzimuthDegrees                = 11,
-    GPGSVGroupSequancePRN2SOrNRatio                     = 12,
-    GPGSVGroupSequancePRN3NumberOfSatellites            = 13,
-    GPGSVGroupSequancePRN3HeightDegrees                 = 14,
-    GPGSVGroupSequancePRN3AzimuthDegrees                = 15,
-    GPGSVGroupSequancePRN3SOrNRatio                     = 16,
-    GPGSVGroupSequancePRN4NumberOfSatellites            = 17,
-    GPGSVGroupSequancePRN4HeightDegrees                 = 18,
-    GPGSVGroupSequancePRN4AzimuthDegrees                = 19,
-    GPGSVGroupSequancePRN4SOrNRatio                     = 20,
-    GPGSVGroupSequanceCheckSum                          = 21
+    GPGSVGroupSequancePRN1NumberOfSatellites            = 4,
+    GPGSVGroupSequancePRN1HeightDegrees                 = 5,
+    GPGSVGroupSequancePRN1AzimuthDegrees                = 6,
+    GPGSVGroupSequancePRN1SOrNRatio                     = 7,
+    GPGSVGroupSequancePRN2NumberOfSatellites            = 8,
+    GPGSVGroupSequancePRN2HeightDegrees                 = 9,
+    GPGSVGroupSequancePRN2AzimuthDegrees                = 10,
+    GPGSVGroupSequancePRN2SOrNRatio                     = 11,
+    GPGSVGroupSequancePRN3NumberOfSatellites            = 12,
+    GPGSVGroupSequancePRN3HeightDegrees                 = 13,
+    GPGSVGroupSequancePRN3AzimuthDegrees                = 14,
+    GPGSVGroupSequancePRN3SOrNRatio                     = 15,
+    GPGSVGroupSequancePRN4NumberOfSatellites            = 16,
+    GPGSVGroupSequancePRN4HeightDegrees                 = 17,
+    GPGSVGroupSequancePRN4AzimuthDegrees                = 18,
+    GPGSVGroupSequancePRN4SOrNRatio                     = 19,
+    GPGSVGroupSequanceCheckSum                          = 20
 };
 
 typedef NS_ENUM(NSInteger, GPRMCGroupSequance) {
@@ -140,12 +137,16 @@ typedef NS_ENUM(NSInteger, GPSState) {
 };
 
 typedef NS_ENUM(NSInteger, GPVTGGroupSequance) {
-    GPVTGGroupSequanceType                          = 1,
-    GPVTGGroupSequanceCourseDirectionInDegrees      = 2,
-    GPVTGGroupSequanceMagneticDeclinationInDegrees  = 3,
-    GPVTGGroupSequanceSpeedSOGInKnots               = 4,
-    GPVTGGroupSequanceSpeedSOGInKilometersPerHour   = 5,
-    GPVTGGroupSequanceCheckSum                      = 6
+    GPVTGGroupSequanceType                                  = 1,
+    GPVTGGroupSequanceCourseDirectionInDegrees              = 2,
+    GPVTGGroupSequanceCourseDegreesIdentifier               = 3,
+    GPVTGGroupSequanceMagneticDeclinationInDegrees          = 4,
+    GPVTGGroupSequanceMagneticDegreesIdentifier             = 5,
+    GPVTGGroupSequanceSpeedSOGInKnots                       = 6,
+    GPVTGGroupSequanceSpeedSOGKnotsIdentifier               = 7,
+    GPVTGGroupSequanceSpeedSOGInKilometersPerHour           = 8,
+    GPVTGGroupSequanceSpeedSOGKilometersPerHourIdentifier   = 9,
+    GPVTGGroupSequanceCheckSum                              = 10
 };
 
 typedef NS_ENUM(NSInteger, GPZDAGroupSequance) {

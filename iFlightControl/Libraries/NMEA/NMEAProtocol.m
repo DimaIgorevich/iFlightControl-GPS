@@ -117,14 +117,12 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         [data substringWithRange:[match rangeAtIndex:GPGGAGroupSequanceGeoidalDifference]],
                         [data substringWithRange:[match rangeAtIndex:GPGGAGroupSequanceUnitOfDifference]],
                         [data substringWithRange:[match rangeAtIndex:GPGGAGroupSequanceAgeOfDifferentialData]],
-                        [data substringWithRange:[match rangeAtIndex:GPGGAGroupSequanceStationIndicator]],
                         [data substringWithRange:[match rangeAtIndex:GPGGAGroupSequanceCheckSum]]
                         ];
     
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
         [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGGA];
     }
-    
 }
 
 #pragma mark - GPGLL
@@ -168,7 +166,6 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceSatellitesPRN9]],
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceSatellitesPRN10]],
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceSatellitesPRN11]],
-                        [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceSatellitesPRN12]],
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceFactorPDOP]],
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceFactorHDOP]],
                         [data substringWithRange:[match rangeAtIndex:GPGSAGroupSequanceFactorVDOP]],
@@ -184,12 +181,11 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
 
 + (void)parseTypeGPGSVData:(NSString *)data withMatches:(NSArray *)matches delegate:(id <NMEAProtocolDelegate> )delegate {
     NSTextCheckingResult *match = [matches firstObject];
-    
+
     NSArray *result = @[
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequanceType]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequanceTotalNumberOfMessages]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequanceNumberOfMessage]],
-                        [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequanceTotalNumberOfVisibleSatellites]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequancePRN1NumberOfSatellites]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequancePRN1HeightDegrees]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequancePRN1AzimuthDegrees]],
@@ -208,7 +204,6 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequancePRN4SOrNRatio]],
                         [data substringWithRange:[match rangeAtIndex:GPGSVGroupSequanceCheckSum]],
                         ];
-    
     if ([delegate respondsToSelector:@selector(didFinishParseData:protocolType:)]) {
         [delegate didFinishParseData:result protocolType:GPSNMEAProtocolTypeGPGSV];
     }
@@ -244,13 +239,17 @@ NSString * const NMEAProtocolExpressionPatternGPZDA = @"([^,]*),([^,]*),([^,]*),
 
 + (void)parseTypeGPVTGData:(NSString *)data withMatches:(NSArray *)matches delegate:(id <NMEAProtocolDelegate> )delegate {
     NSTextCheckingResult *match = [matches firstObject];
-
+    
     NSArray *result = @[
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceType]],
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceCourseDirectionInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceCourseDegreesIdentifier]],
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceMagneticDeclinationInDegrees]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceMagneticDegreesIdentifier]],
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGInKnots]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGKnotsIdentifier]],
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGInKilometersPerHour]],
+                        [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceSpeedSOGKilometersPerHourIdentifier]],
                         [data substringWithRange:[match rangeAtIndex:GPVTGGroupSequanceCheckSum]]
                         ];
     
