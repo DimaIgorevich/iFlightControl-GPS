@@ -17,6 +17,8 @@
 		84E13DBC1E9A948F00872A74 /* plane_annotation_icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E13DBB1E9A948F00872A74 /* plane_annotation_icon_32x32.png */; };
 		84E13DC11E9A9C0600872A74 /* FCBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E13DC01E9A9C0600872A74 /* FCBluetoothManager.m */; };
 		84E13DC71E9AA79E00872A74 /* CLLocation+DMSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E13DC61E9AA79E00872A74 /* CLLocation+DMSCoordinate.m */; };
+		84E13DC91E9AB1C300872A74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DC81E9AB1C100872A74 /* CoreGraphics.framework */; };
+		84E13DCB1E9AB1CB00872A74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DCA1E9AB1CB00872A74 /* UIKit.framework */; };
 		84EFC07F1E990F870044874B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC07E1E990F870044874B /* main.m */; };
 		84EFC0821E990F870044874B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0811E990F870044874B /* AppDelegate.m */; };
 		84EFC0881E990F870044874B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0861E990F870044874B /* Main.storyboard */; };
@@ -72,6 +74,8 @@
 		84E13DC31E9AA13100872A74 /* FCManagersHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCManagersHeader.h; path = Logic/Managers/FCManagersHeader.h; sourceTree = "<group>"; };
 		84E13DC51E9AA79E00872A74 /* CLLocation+DMSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+DMSCoordinate.h"; path = "Libraries/Categories/CLLocation+DMSCoordinate/CLLocation+DMSCoordinate.h"; sourceTree = "<group>"; };
 		84E13DC61E9AA79E00872A74 /* CLLocation+DMSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+DMSCoordinate.m"; path = "Libraries/Categories/CLLocation+DMSCoordinate/CLLocation+DMSCoordinate.m"; sourceTree = "<group>"; };
+		84E13DC81E9AB1C100872A74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84E13DCA1E9AB1CB00872A74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84EFC07A1E990F870044874B /* iFlightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFC07E1E990F870044874B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84EFC0801E990F870044874B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E13DCB1E9AB1CB00872A74 /* UIKit.framework in Frameworks */,
+				84E13DC91E9AB1C300872A74 /* CoreGraphics.framework in Frameworks */,
 				84E13DB31E9A8D2500872A74 /* CoreLocation.framework in Frameworks */,
 				84E13DAD1E9A8A4500872A74 /* QuartzCore.framework in Frameworks */,
 				84E13DAB1E9A8A4000872A74 /* MapKit.framework in Frameworks */,
@@ -154,6 +160,8 @@
 		84E13DA71E9A8A0900872A74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84E13DCA1E9AB1CB00872A74 /* UIKit.framework */,
+				84E13DC81E9AB1C100872A74 /* CoreGraphics.framework */,
 				84E13DB21E9A8D2500872A74 /* CoreLocation.framework */,
 				84E13DAC1E9A8A4500872A74 /* QuartzCore.framework */,
 				84E13DAA1E9A8A4000872A74 /* MapKit.framework */,
