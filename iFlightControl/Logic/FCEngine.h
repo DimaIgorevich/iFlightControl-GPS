@@ -6,19 +6,11 @@
 //  Copyright © 2017 MohylaUniversity. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-#import "FCObject.h"
-
 @interface FCEngine : NSObject
 
-@property (nonatomic, readonly) CBCentralManager *bluetoothManager;
+@property (nonatomic, readonly) FCBluetoothManager *bluetoothManager;
 
-@property (nonatomic, readonly) CBPeripheral *peripheral;
-
-- (void)connectToPeripheral:(CBPeripheral *)peripheral;
-
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
 
 + (NSArray *)arrayOfObjectsOfClass:(Class)obj_class fromJSON:(id)json;
 
