@@ -11,4 +11,6 @@
 
 #import "CBCentralManager+UIAlertViewPermission.h"
 
+#import "CLLocation+DMSCoordinate.h"
+
 #endif /* FCCatigoriesHeader_h */
