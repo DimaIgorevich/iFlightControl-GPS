@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		843176361E9994EF0089F355 /* NMEAProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 843176351E9994EF0089F355 /* NMEAProtocol.m */; };
+		84E13DA91E9A8A2700872A74 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DA81E9A8A2700872A74 /* CoreBluetooth.framework */; };
+		84E13DAB1E9A8A4000872A74 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DAA1E9A8A4000872A74 /* MapKit.framework */; };
+		84E13DAD1E9A8A4500872A74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DAC1E9A8A4500872A74 /* QuartzCore.framework */; };
+		84E13DB11E9A8B8D00872A74 /* plane_annotation_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E13DB01E9A8B8D00872A74 /* plane_annotation_icon.png */; };
+		84E13DB31E9A8D2500872A74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E13DB21E9A8D2500872A74 /* CoreLocation.framework */; };
+		84E13DBA1E9A91CD00872A74 /* FCPlaneAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E13DB91E9A91CD00872A74 /* FCPlaneAnnotationView.m */; };
+		84E13DBC1E9A948F00872A74 /* plane_annotation_icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E13DBB1E9A948F00872A74 /* plane_annotation_icon_32x32.png */; };
+		84E13DC11E9A9C0600872A74 /* FCBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E13DC01E9A9C0600872A74 /* FCBluetoothManager.m */; };
+		84E13DC71E9AA79E00872A74 /* CLLocation+DMSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E13DC61E9AA79E00872A74 /* CLLocation+DMSCoordinate.m */; };
 		84EFC07F1E990F870044874B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC07E1E990F870044874B /* main.m */; };
 		84EFC0821E990F870044874B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0811E990F870044874B /* AppDelegate.m */; };
 		84EFC0881E990F870044874B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0861E990F870044874B /* Main.storyboard */; };
@@ -50,6 +59,19 @@
 		843176341E9994EF0089F355 /* NMEAProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NMEAProtocol.h; path = Libraries/NMEA/NMEAProtocol.h; sourceTree = "<group>"; };
 		843176351E9994EF0089F355 /* NMEAProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NMEAProtocol.m; path = Libraries/NMEA/NMEAProtocol.m; sourceTree = "<group>"; };
 		847C21371E9A0FFC0006AECB /* FCLibrariesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FCLibrariesHeader.h; path = Libraries/FCLibrariesHeader.h; sourceTree = "<group>"; };
+		84E13DA81E9A8A2700872A74 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		84E13DAA1E9A8A4000872A74 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84E13DAC1E9A8A4500872A74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84E13DB01E9A8B8D00872A74 /* plane_annotation_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_annotation_icon.png; sourceTree = "<group>"; };
+		84E13DB21E9A8D2500872A74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84E13DB81E9A91CD00872A74 /* FCPlaneAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCPlaneAnnotationView.h; path = UI/Views/PlaneAnnotation/FCPlaneAnnotationView.h; sourceTree = "<group>"; };
+		84E13DB91E9A91CD00872A74 /* FCPlaneAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCPlaneAnnotationView.m; path = UI/Views/PlaneAnnotation/FCPlaneAnnotationView.m; sourceTree = "<group>"; };
+		84E13DBB1E9A948F00872A74 /* plane_annotation_icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_annotation_icon_32x32.png; sourceTree = "<group>"; };
+		84E13DBF1E9A9C0600872A74 /* FCBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCBluetoothManager.h; path = Logic/Managers/BluetoothManger/FCBluetoothManager.h; sourceTree = "<group>"; };
+		84E13DC01E9A9C0600872A74 /* FCBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCBluetoothManager.m; path = Logic/Managers/BluetoothManger/FCBluetoothManager.m; sourceTree = "<group>"; };
+		84E13DC31E9AA13100872A74 /* FCManagersHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCManagersHeader.h; path = Logic/Managers/FCManagersHeader.h; sourceTree = "<group>"; };
+		84E13DC51E9AA79E00872A74 /* CLLocation+DMSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+DMSCoordinate.h"; path = "Libraries/Categories/CLLocation+DMSCoordinate/CLLocation+DMSCoordinate.h"; sourceTree = "<group>"; };
+		84E13DC61E9AA79E00872A74 /* CLLocation+DMSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+DMSCoordinate.m"; path = "Libraries/Categories/CLLocation+DMSCoordinate/CLLocation+DMSCoordinate.m"; sourceTree = "<group>"; };
 		84EFC07A1E990F870044874B /* iFlightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EFC07E1E990F870044874B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84EFC0801E990F870044874B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +118,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E13DB31E9A8D2500872A74 /* CoreLocation.framework in Frameworks */,
+				84E13DAD1E9A8A4500872A74 /* QuartzCore.framework in Frameworks */,
+				84E13DAB1E9A8A4000872A74 /* MapKit.framework in Frameworks */,
+				84E13DA91E9A8A2700872A74 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +151,75 @@
 			name = NMEA;
 			sourceTree = "<group>";
 		};
+		84E13DA71E9A8A0900872A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DB21E9A8D2500872A74 /* CoreLocation.framework */,
+				84E13DAC1E9A8A4500872A74 /* QuartzCore.framework */,
+				84E13DAA1E9A8A4000872A74 /* MapKit.framework */,
+				84E13DA81E9A8A2700872A74 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E13DAE1E9A8B8D00872A74 /* radar_screen */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DAF1E9A8B8D00872A74 /* map_view */,
+			);
+			path = radar_screen;
+			sourceTree = "<group>";
+		};
+		84E13DAF1E9A8B8D00872A74 /* map_view */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DBB1E9A948F00872A74 /* plane_annotation_icon_32x32.png */,
+				84E13DB01E9A8B8D00872A74 /* plane_annotation_icon.png */,
+			);
+			path = map_view;
+			sourceTree = "<group>";
+		};
+		84E13DB71E9A919F00872A74 /* PlaneAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DB81E9A91CD00872A74 /* FCPlaneAnnotationView.h */,
+				84E13DB91E9A91CD00872A74 /* FCPlaneAnnotationView.m */,
+			);
+			name = PlaneAnnotation;
+			sourceTree = "<group>";
+		};
+		84E13DBD1E9A9BCE00872A74 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DBE1E9A9BD700872A74 /* BluetoothManager */,
+				84E13DC31E9AA13100872A74 /* FCManagersHeader.h */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		84E13DBE1E9A9BD700872A74 /* BluetoothManager */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DBF1E9A9C0600872A74 /* FCBluetoothManager.h */,
+				84E13DC01E9A9C0600872A74 /* FCBluetoothManager.m */,
+			);
+			name = BluetoothManager;
+			sourceTree = "<group>";
+		};
+		84E13DC41E9AA75200872A74 /* CLLocation+DMSCoordinate */ = {
+			isa = PBXGroup;
+			children = (
+				84E13DC51E9AA79E00872A74 /* CLLocation+DMSCoordinate.h */,
+				84E13DC61E9AA79E00872A74 /* CLLocation+DMSCoordinate.m */,
+			);
+			name = "CLLocation+DMSCoordinate";
+			sourceTree = "<group>";
+		};
 		84EFC0711E990F860044874B = {
 			isa = PBXGroup;
 			children = (
 				84EFC07C1E990F870044874B /* iFlightControl */,
+				84E13DA71E9A8A0900872A74 /* Frameworks */,
 				84EFC0961E990F870044874B /* iFlightControlTests */,
 				84EFC0A11E990F870044874B /* iFlightControlUITests */,
 				84EFC07B1E990F870044874B /* Products */,
@@ -205,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				84EFC0CD1E991C2F0044874B /* Model */,
+				84E13DBD1E9A9BCE00872A74 /* Managers */,
 				84EFC0CA1E991C090044874B /* FCEngine.h */,
 				84EFC0CB1E991C090044874B /* FCEngine.m */,
 				84EFC0E81E994AB30044874B /* FCContainer.h */,
@@ -236,6 +328,7 @@
 		84EFC0B41E990FB80044874B /* Catigories */ = {
 			isa = PBXGroup;
 			children = (
+				84E13DC41E9AA75200872A74 /* CLLocation+DMSCoordinate */,
 				84EFC0D61E9926850044874B /* CBCentralManager+UIAlertViewPermission */,
 				84EFC0DB1E992A2F0044874B /* FCCatigoriesHeader.h */,
 			);
@@ -245,6 +338,7 @@
 		84EFC0B51E990FC10044874B /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				84E13DB71E9A919F00872A74 /* PlaneAnnotation */,
 			);
 			name = VIews;
 			sourceTree = "<group>";
@@ -300,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				84EFC0DD1E9933090044874B /* launch_screen */,
+				84E13DAE1E9A8B8D00872A74 /* radar_screen */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -448,8 +543,10 @@
 			files = (
 				84EFC08D1E990F870044874B /* LaunchScreen.storyboard in Resources */,
 				84EFC0F11E995AC80044874B /* Radar.storyboard in Resources */,
+				84E13DBC1E9A948F00872A74 /* plane_annotation_icon_32x32.png in Resources */,
 				84EFC08A1E990F870044874B /* Assets.xcassets in Resources */,
 				84EFC0DF1E9933090044874B /* launch_screen.png in Resources */,
+				84E13DB11E9A8B8D00872A74 /* plane_annotation_icon.png in Resources */,
 				84EFC0881E990F870044874B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +576,9 @@
 				84EFC0D91E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m in Sources */,
 				84EFC0C91E991BE60044874B /* FCNumericConstants.m in Sources */,
 				84EFC0E31E9936B40044874B /* FCBaseViewController.m in Sources */,
+				84E13DC71E9AA79E00872A74 /* CLLocation+DMSCoordinate.m in Sources */,
 				84EFC0E71E99479C0044874B /* FCBLEDevice.m in Sources */,
+				84E13DBA1E9A91CD00872A74 /* FCPlaneAnnotationView.m in Sources */,
 				84EFC0821E990F870044874B /* AppDelegate.m in Sources */,
 				84EFC07F1E990F870044874B /* main.m in Sources */,
 				84EFC0C31E9910F20044874B /* FCMainViewController.m in Sources */,
@@ -488,6 +587,7 @@
 				84EFC0D51E991E970044874B /* FCObject.m in Sources */,
 				84EFC0C61E991A780044874B /* FCStringConstants.m in Sources */,
 				843176361E9994EF0089F355 /* NMEAProtocol.m in Sources */,
+				84E13DC11E9A9C0600872A74 /* FCBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
