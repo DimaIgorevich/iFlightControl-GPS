@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateBLEDeviceList) name:kUpdateBLEDeviceListNotification object:nil];
-    [[[FCEngine sharedInstance] bluetoothManager] state];
+    [[FCEngine sharedInstance].bluetoothManager checkState];
 }
 
 #pragma mark - Notification Methods
@@ -43,7 +43,7 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[FCContainer sharedInstance] devices].count;
+    return [FCContainer sharedInstance].devices.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
