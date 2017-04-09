@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="FaH-Vr-twL">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18814060180953895" green="0.55186930971660197" blue="0.93035827019999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FaH-Vr-twL" secondAttribute="bottom" id="1iD-LH-ezM"/>
+                            <constraint firstItem="FaH-Vr-twL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="2lc-jJ-eRT"/>
+                            <constraint firstItem="FaH-Vr-twL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="L9J-19-03i"/>
+                            <constraint firstItem="FaH-Vr-twL" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" constant="20" id="Pfq-Gs-cbn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FaH-Vr-twL" secondAttribute="trailing" constant="-20" id="eah-IX-tY5"/>
+                            <constraint firstItem="FaH-Vr-twL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="i6W-7z-DIh"/>
+                            <constraint firstItem="FaH-Vr-twL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="lhP-99-gTN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Pfq-Gs-cbn"/>
+                                <exclude reference="i6W-7z-DIh"/>
+                                <exclude reference="lhP-99-gTN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_screen.png" width="1440" height="2555"/>
+    </resources>
+</document>

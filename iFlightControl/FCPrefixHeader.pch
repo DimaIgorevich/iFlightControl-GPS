@@ -1,0 +1,38 @@
+//
+//  FCPrefixHeader.pch
+//  iFlightControl
+//
+//  Created by Admin on 08.04.17.
+//  Copyright © 2017 MohylaUniversity. All rights reserved.
+//
+
+#ifndef FCPrefixHeader_pch
+#define FCPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+@import MapKit;
+
+@import CoreBluetooth;
+
+#import "FCStringConstants.h"
+
+#import "FCNumericConstants.h"
+
+#import "FCLibrariesHeader.h"
+
+#import "FCModelHeader.h"
+
+#import "FCCatigoriesHeader.h"
+
+#import "FCEngine.h"
+
+#import "FCContainer.h"
+
+#endif
+
+#endif /* FCPrefixHeader_pch */

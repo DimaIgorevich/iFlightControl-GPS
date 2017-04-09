@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843176361E9994EF0089F355 /* NMEAProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 843176351E9994EF0089F355 /* NMEAProtocol.m */; };
+		84EFC07F1E990F870044874B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC07E1E990F870044874B /* main.m */; };
+		84EFC0821E990F870044874B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0811E990F870044874B /* AppDelegate.m */; };
+		84EFC0881E990F870044874B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0861E990F870044874B /* Main.storyboard */; };
+		84EFC08A1E990F870044874B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0891E990F870044874B /* Assets.xcassets */; };
+		84EFC08D1E990F870044874B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC08B1E990F870044874B /* LaunchScreen.storyboard */; };
+		84EFC0981E990F870044874B /* iFlightControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0971E990F870044874B /* iFlightControlTests.m */; };
+		84EFC0A31E990F870044874B /* iFlightControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0A21E990F870044874B /* iFlightControlUITests.m */; };
+		84EFC0C31E9910F20044874B /* FCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0C21E9910F20044874B /* FCMainViewController.m */; };
+		84EFC0C61E991A780044874B /* FCStringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0C51E991A780044874B /* FCStringConstants.m */; };
+		84EFC0C91E991BE60044874B /* FCNumericConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0C81E991BE60044874B /* FCNumericConstants.m */; };
+		84EFC0CC1E991C090044874B /* FCEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0CB1E991C090044874B /* FCEngine.m */; };
+		84EFC0D51E991E970044874B /* FCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0D41E991E970044874B /* FCObject.m */; };
+		84EFC0D91E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0D81E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m */; };
+		84EFC0DF1E9933090044874B /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0DE1E9933090044874B /* launch_screen.png */; };
+		84EFC0E31E9936B40044874B /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0E21E9936B40044874B /* FCBaseViewController.m */; };
+		84EFC0E71E99479C0044874B /* FCBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0E61E99479C0044874B /* FCBLEDevice.m */; };
+		84EFC0EA1E994AB30044874B /* FCContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0E91E994AB30044874B /* FCContainer.m */; };
+		84EFC0EF1E995AA20044874B /* FCRadarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFC0EE1E995AA20044874B /* FCRadarViewController.m */; };
+		84EFC0F11E995AC80044874B /* Radar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFC0F01E995AC80044874B /* Radar.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84EFC0941E990F870044874B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EFC0721E990F860044874B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EFC0791E990F860044874B;
+			remoteInfo = iFlightControl;
+		};
+		84EFC09F1E990F870044874B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EFC0721E990F860044874B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EFC0791E990F860044874B;
+			remoteInfo = iFlightControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		843176341E9994EF0089F355 /* NMEAProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NMEAProtocol.h; path = Libraries/NMEA/NMEAProtocol.h; sourceTree = "<group>"; };
+		843176351E9994EF0089F355 /* NMEAProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NMEAProtocol.m; path = Libraries/NMEA/NMEAProtocol.m; sourceTree = "<group>"; };
+		847C21371E9A0FFC0006AECB /* FCLibrariesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FCLibrariesHeader.h; path = Libraries/FCLibrariesHeader.h; sourceTree = "<group>"; };
+		84EFC07A1E990F870044874B /* iFlightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EFC07E1E990F870044874B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EFC0801E990F870044874B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84EFC0811E990F870044874B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84EFC0871E990F870044874B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84EFC0891E990F870044874B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EFC08C1E990F870044874B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84EFC08E1E990F870044874B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EFC0931E990F870044874B /* iFlightControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlightControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EFC0971E990F870044874B /* iFlightControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFlightControlTests.m; sourceTree = "<group>"; };
+		84EFC0991E990F870044874B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EFC09E1E990F870044874B /* iFlightControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlightControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EFC0A21E990F870044874B /* iFlightControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFlightControlUITests.m; sourceTree = "<group>"; };
+		84EFC0A41E990F870044874B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EFC0C11E9910F20044874B /* FCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCMainViewController.h; path = UI/Screens/Main/FCMainViewController.h; sourceTree = "<group>"; };
+		84EFC0C21E9910F20044874B /* FCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCMainViewController.m; path = UI/Screens/Main/FCMainViewController.m; sourceTree = "<group>"; };
+		84EFC0C41E991A780044874B /* FCStringConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCStringConstants.h; path = Constants/FCStringConstants.h; sourceTree = "<group>"; };
+		84EFC0C51E991A780044874B /* FCStringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCStringConstants.m; path = Constants/FCStringConstants.m; sourceTree = "<group>"; };
+		84EFC0C71E991BE60044874B /* FCNumericConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCNumericConstants.h; path = Constants/FCNumericConstants.h; sourceTree = "<group>"; };
+		84EFC0C81E991BE60044874B /* FCNumericConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCNumericConstants.m; path = Constants/FCNumericConstants.m; sourceTree = "<group>"; };
+		84EFC0CA1E991C090044874B /* FCEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCEngine.h; path = Logic/FCEngine.h; sourceTree = "<group>"; };
+		84EFC0CB1E991C090044874B /* FCEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCEngine.m; path = Logic/FCEngine.m; sourceTree = "<group>"; };
+		84EFC0CF1E991C4B0044874B /* FCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCPrefixHeader.pch; sourceTree = "<group>"; };
+		84EFC0D31E991E970044874B /* FCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCObject.h; path = Logic/Model/Base/FCObject.h; sourceTree = "<group>"; };
+		84EFC0D41E991E970044874B /* FCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCObject.m; path = Logic/Model/Base/FCObject.m; sourceTree = "<group>"; };
+		84EFC0D71E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CBCentralManager+UIAlertViewPermission.h"; path = "Libraries/Categories/CBCentralManager+UIAlertViewPermission/CBCentralManager+UIAlertViewPermission.h"; sourceTree = "<group>"; };
+		84EFC0D81E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CBCentralManager+UIAlertViewPermission.m"; path = "Libraries/Categories/CBCentralManager+UIAlertViewPermission/CBCentralManager+UIAlertViewPermission.m"; sourceTree = "<group>"; };
+		84EFC0DB1E992A2F0044874B /* FCCatigoriesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCatigoriesHeader.h; sourceTree = "<group>"; };
+		84EFC0DE1E9933090044874B /* launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_screen.png; sourceTree = "<group>"; };
+		84EFC0E11E9936B40044874B /* FCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCBaseViewController.h; path = UI/Base/FCBaseViewController.h; sourceTree = "<group>"; };
+		84EFC0E21E9936B40044874B /* FCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCBaseViewController.m; path = UI/Base/FCBaseViewController.m; sourceTree = "<group>"; };
+		84EFC0E51E99479C0044874B /* FCBLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCBLEDevice.h; path = Logic/Model/BLEDevice/FCBLEDevice.h; sourceTree = "<group>"; };
+		84EFC0E61E99479C0044874B /* FCBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCBLEDevice.m; path = Logic/Model/BLEDevice/FCBLEDevice.m; sourceTree = "<group>"; };
+		84EFC0E81E994AB30044874B /* FCContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCContainer.h; path = Logic/FCContainer.h; sourceTree = "<group>"; };
+		84EFC0E91E994AB30044874B /* FCContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCContainer.m; path = Logic/FCContainer.m; sourceTree = "<group>"; };
+		84EFC0EB1E9951510044874B /* FCModelHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelHeader.h; sourceTree = "<group>"; };
+		84EFC0ED1E995AA20044874B /* FCRadarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCRadarViewController.h; path = UI/Screens/Radar/FCRadarViewController.h; sourceTree = "<group>"; };
+		84EFC0EE1E995AA20044874B /* FCRadarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCRadarViewController.m; path = UI/Screens/Radar/FCRadarViewController.m; sourceTree = "<group>"; };
+		84EFC0F01E995AC80044874B /* Radar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Radar.storyboard; path = UI/Screens/Radar/Radar.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84EFC0771E990F860044874B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC0901E990F870044874B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC09B1E990F870044874B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843176331E9994980089F355 /* NMEA */ = {
+			isa = PBXGroup;
+			children = (
+				843176341E9994EF0089F355 /* NMEAProtocol.h */,
+				843176351E9994EF0089F355 /* NMEAProtocol.m */,
+			);
+			name = NMEA;
+			sourceTree = "<group>";
+		};
+		84EFC0711E990F860044874B = {
+			isa = PBXGroup;
+			children = (
+				84EFC07C1E990F870044874B /* iFlightControl */,
+				84EFC0961E990F870044874B /* iFlightControlTests */,
+				84EFC0A11E990F870044874B /* iFlightControlUITests */,
+				84EFC07B1E990F870044874B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84EFC07B1E990F870044874B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC07A1E990F870044874B /* iFlightControl.app */,
+				84EFC0931E990F870044874B /* iFlightControlTests.xctest */,
+				84EFC09E1E990F870044874B /* iFlightControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84EFC07C1E990F870044874B /* iFlightControl */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0B21E990FA30044874B /* Libraries */,
+				84EFC0B11E990F9E0044874B /* Logic */,
+				84EFC0B01E990F970044874B /* Constants */,
+				84EFC0DC1E9933090044874B /* Resources */,
+				84EFC0B31E990FA90044874B /* UI */,
+				84EFC0801E990F870044874B /* AppDelegate.h */,
+				84EFC0811E990F870044874B /* AppDelegate.m */,
+				84EFC07D1E990F870044874B /* Supporting Files */,
+			);
+			path = iFlightControl;
+			sourceTree = "<group>";
+		};
+		84EFC07D1E990F870044874B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0891E990F870044874B /* Assets.xcassets */,
+				84EFC08B1E990F870044874B /* LaunchScreen.storyboard */,
+				84EFC08E1E990F870044874B /* Info.plist */,
+				84EFC07E1E990F870044874B /* main.m */,
+				84EFC0CF1E991C4B0044874B /* FCPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84EFC0961E990F870044874B /* iFlightControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0971E990F870044874B /* iFlightControlTests.m */,
+				84EFC0991E990F870044874B /* Info.plist */,
+			);
+			path = iFlightControlTests;
+			sourceTree = "<group>";
+		};
+		84EFC0A11E990F870044874B /* iFlightControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0A21E990F870044874B /* iFlightControlUITests.m */,
+				84EFC0A41E990F870044874B /* Info.plist */,
+			);
+			path = iFlightControlUITests;
+			sourceTree = "<group>";
+		};
+		84EFC0B01E990F970044874B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0C41E991A780044874B /* FCStringConstants.h */,
+				84EFC0C51E991A780044874B /* FCStringConstants.m */,
+				84EFC0C71E991BE60044874B /* FCNumericConstants.h */,
+				84EFC0C81E991BE60044874B /* FCNumericConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		84EFC0B11E990F9E0044874B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0CD1E991C2F0044874B /* Model */,
+				84EFC0CA1E991C090044874B /* FCEngine.h */,
+				84EFC0CB1E991C090044874B /* FCEngine.m */,
+				84EFC0E81E994AB30044874B /* FCContainer.h */,
+				84EFC0E91E994AB30044874B /* FCContainer.m */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		84EFC0B21E990FA30044874B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				843176331E9994980089F355 /* NMEA */,
+				84EFC0B41E990FB80044874B /* Catigories */,
+				847C21371E9A0FFC0006AECB /* FCLibrariesHeader.h */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		84EFC0B31E990FA90044874B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0E01E9936810044874B /* Base */,
+				84EFC0B51E990FC10044874B /* VIews */,
+				84EFC0B61E990FCA0044874B /* Screens */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		84EFC0B41E990FB80044874B /* Catigories */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0D61E9926850044874B /* CBCentralManager+UIAlertViewPermission */,
+				84EFC0DB1E992A2F0044874B /* FCCatigoriesHeader.h */,
+			);
+			name = Catigories;
+			sourceTree = "<group>";
+		};
+		84EFC0B51E990FC10044874B /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		84EFC0B61E990FCA0044874B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0EC1E995A540044874B /* Radar */,
+				84EFC0B71E990FE70044874B /* Main */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		84EFC0B71E990FE70044874B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0C11E9910F20044874B /* FCMainViewController.h */,
+				84EFC0C21E9910F20044874B /* FCMainViewController.m */,
+				84EFC0861E990F870044874B /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		84EFC0CD1E991C2F0044874B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0E41E9947450044874B /* BLEDevice */,
+				84EFC0CE1E991C350044874B /* Base */,
+				84EFC0EB1E9951510044874B /* FCModelHeader.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84EFC0CE1E991C350044874B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0D31E991E970044874B /* FCObject.h */,
+				84EFC0D41E991E970044874B /* FCObject.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		84EFC0D61E9926850044874B /* CBCentralManager+UIAlertViewPermission */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0D71E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.h */,
+				84EFC0D81E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m */,
+			);
+			name = "CBCentralManager+UIAlertViewPermission";
+			sourceTree = "<group>";
+		};
+		84EFC0DC1E9933090044874B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0DD1E9933090044874B /* launch_screen */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84EFC0DD1E9933090044874B /* launch_screen */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0DE1E9933090044874B /* launch_screen.png */,
+			);
+			path = launch_screen;
+			sourceTree = "<group>";
+		};
+		84EFC0E01E9936810044874B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0E11E9936B40044874B /* FCBaseViewController.h */,
+				84EFC0E21E9936B40044874B /* FCBaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		84EFC0E41E9947450044874B /* BLEDevice */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0E51E99479C0044874B /* FCBLEDevice.h */,
+				84EFC0E61E99479C0044874B /* FCBLEDevice.m */,
+			);
+			name = BLEDevice;
+			sourceTree = "<group>";
+		};
+		84EFC0EC1E995A540044874B /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				84EFC0ED1E995AA20044874B /* FCRadarViewController.h */,
+				84EFC0EE1E995AA20044874B /* FCRadarViewController.m */,
+				84EFC0F01E995AC80044874B /* Radar.storyboard */,
+			);
+			name = Radar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84EFC0791E990F860044874B /* iFlightControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EFC0A71E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControl" */;
+			buildPhases = (
+				84EFC0761E990F860044874B /* Sources */,
+				84EFC0771E990F860044874B /* Frameworks */,
+				84EFC0781E990F860044874B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iFlightControl;
+			productName = iFlightControl;
+			productReference = 84EFC07A1E990F870044874B /* iFlightControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84EFC0921E990F870044874B /* iFlightControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EFC0AA1E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControlTests" */;
+			buildPhases = (
+				84EFC08F1E990F870044874B /* Sources */,
+				84EFC0901E990F870044874B /* Frameworks */,
+				84EFC0911E990F870044874B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EFC0951E990F870044874B /* PBXTargetDependency */,
+			);
+			name = iFlightControlTests;
+			productName = iFlightControlTests;
+			productReference = 84EFC0931E990F870044874B /* iFlightControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84EFC09D1E990F870044874B /* iFlightControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EFC0AD1E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControlUITests" */;
+			buildPhases = (
+				84EFC09A1E990F870044874B /* Sources */,
+				84EFC09B1E990F870044874B /* Frameworks */,
+				84EFC09C1E990F870044874B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EFC0A01E990F870044874B /* PBXTargetDependency */,
+			);
+			name = iFlightControlUITests;
+			productName = iFlightControlUITests;
+			productReference = 84EFC09E1E990F870044874B /* iFlightControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84EFC0721E990F860044874B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MohylaUniversity;
+				TargetAttributes = {
+					84EFC0791E990F860044874B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = T8FTS9342H;
+					};
+					84EFC0921E990F870044874B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = T8FTS9342H;
+						TestTargetID = 84EFC0791E990F860044874B;
+					};
+					84EFC09D1E990F870044874B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = T8FTS9342H;
+						TestTargetID = 84EFC0791E990F860044874B;
+					};
+				};
+			};
+			buildConfigurationList = 84EFC0751E990F860044874B /* Build configuration list for PBXProject "iFlightControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84EFC0711E990F860044874B;
+			productRefGroup = 84EFC07B1E990F870044874B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84EFC0791E990F860044874B /* iFlightControl */,
+				84EFC0921E990F870044874B /* iFlightControlTests */,
+				84EFC09D1E990F870044874B /* iFlightControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84EFC0781E990F860044874B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EFC08D1E990F870044874B /* LaunchScreen.storyboard in Resources */,
+				84EFC0F11E995AC80044874B /* Radar.storyboard in Resources */,
+				84EFC08A1E990F870044874B /* Assets.xcassets in Resources */,
+				84EFC0DF1E9933090044874B /* launch_screen.png in Resources */,
+				84EFC0881E990F870044874B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC0911E990F870044874B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC09C1E990F870044874B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84EFC0761E990F860044874B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EFC0CC1E991C090044874B /* FCEngine.m in Sources */,
+				84EFC0D91E9926EC0044874B /* CBCentralManager+UIAlertViewPermission.m in Sources */,
+				84EFC0C91E991BE60044874B /* FCNumericConstants.m in Sources */,
+				84EFC0E31E9936B40044874B /* FCBaseViewController.m in Sources */,
+				84EFC0E71E99479C0044874B /* FCBLEDevice.m in Sources */,
+				84EFC0821E990F870044874B /* AppDelegate.m in Sources */,
+				84EFC07F1E990F870044874B /* main.m in Sources */,
+				84EFC0C31E9910F20044874B /* FCMainViewController.m in Sources */,
+				84EFC0EF1E995AA20044874B /* FCRadarViewController.m in Sources */,
+				84EFC0EA1E994AB30044874B /* FCContainer.m in Sources */,
+				84EFC0D51E991E970044874B /* FCObject.m in Sources */,
+				84EFC0C61E991A780044874B /* FCStringConstants.m in Sources */,
+				843176361E9994EF0089F355 /* NMEAProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC08F1E990F870044874B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EFC0981E990F870044874B /* iFlightControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EFC09A1E990F870044874B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EFC0A31E990F870044874B /* iFlightControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84EFC0951E990F870044874B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EFC0791E990F860044874B /* iFlightControl */;
+			targetProxy = 84EFC0941E990F870044874B /* PBXContainerItemProxy */;
+		};
+		84EFC0A01E990F870044874B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EFC0791E990F860044874B /* iFlightControl */;
+			targetProxy = 84EFC09F1E990F870044874B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84EFC0861E990F870044874B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EFC0871E990F870044874B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84EFC08B1E990F870044874B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EFC08C1E990F870044874B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84EFC0A51E990F870044874B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84EFC0A61E990F870044874B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84EFC0A81E990F870044874B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/FCPrefixHeader.pch";
+				INFOPLIST_FILE = iFlightControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84EFC0A91E990F870044874B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/FCPrefixHeader.pch";
+				INFOPLIST_FILE = iFlightControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84EFC0AB1E990F870044874B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iFlightControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlightControl.app/iFlightControl";
+			};
+			name = Debug;
+		};
+		84EFC0AC1E990F870044874B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iFlightControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlightControl.app/iFlightControl";
+			};
+			name = Release;
+		};
+		84EFC0AE1E990F870044874B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iFlightControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iFlightControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		84EFC0AF1E990F870044874B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iFlightControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MU.iFlightControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iFlightControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84EFC0751E990F860044874B /* Build configuration list for PBXProject "iFlightControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EFC0A51E990F870044874B /* Debug */,
+				84EFC0A61E990F870044874B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EFC0A71E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EFC0A81E990F870044874B /* Debug */,
+				84EFC0A91E990F870044874B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EFC0AA1E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EFC0AB1E990F870044874B /* Debug */,
+				84EFC0AC1E990F870044874B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EFC0AD1E990F870044874B /* Build configuration list for PBXNativeTarget "iFlightControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EFC0AE1E990F870044874B /* Debug */,
+				84EFC0AF1E990F870044874B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84EFC0721E990F860044874B /* Project object */;
+}
