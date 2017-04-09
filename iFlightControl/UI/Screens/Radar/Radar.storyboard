@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Radar View Controller-->
@@ -16,10 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="sO7-vc-rF1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-Wa-jzz">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </mapView>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xtC-R1-lnT">
+                                <rect key="frame" x="36" y="35" width="248" height="29"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didSegmentControlChangedValue:" destination="eLF-i5-fqf" eventType="valueChanged" id="79P-p1-WUf"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iW0-Wa-jzz" secondAttribute="trailing" constant="-20" id="0zk-46-FZb"/>
+                            <constraint firstItem="iW0-Wa-jzz" firstAttribute="top" secondItem="sO7-vc-rF1" secondAttribute="topMargin" id="9Db-44-LmB"/>
+                            <constraint firstItem="xtC-R1-lnT" firstAttribute="top" secondItem="sO7-vc-rF1" secondAttribute="topMargin" constant="15" id="KGH-dr-FV2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xtC-R1-lnT" secondAttribute="trailing" constant="20" id="UFB-vP-b4D"/>
+                            <constraint firstItem="xtC-R1-lnT" firstAttribute="top" secondItem="9Tq-SM-sIV" secondAttribute="bottom" constant="15" id="cG1-WZ-5H9"/>
+                            <constraint firstItem="iW0-Wa-jzz" firstAttribute="leading" secondItem="sO7-vc-rF1" secondAttribute="leadingMargin" constant="-20" id="dnL-sL-f3d"/>
+                            <constraint firstItem="FpP-G3-Tgv" firstAttribute="top" secondItem="iW0-Wa-jzz" secondAttribute="bottom" id="iXr-ym-fPt"/>
+                            <constraint firstItem="xtC-R1-lnT" firstAttribute="leading" secondItem="sO7-vc-rF1" secondAttribute="leadingMargin" constant="20" id="mXL-qC-lf5"/>
+                            <constraint firstItem="iW0-Wa-jzz" firstAttribute="top" secondItem="9Tq-SM-sIV" secondAttribute="bottom" id="vo5-l5-DvB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vo5-l5-DvB"/>
+                                <exclude reference="KGH-dr-FV2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="xCT-iC-r42"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="xtC-R1-lnT" id="Dvf-iL-vzx"/>
+                        <outlet property="vMap" destination="iW0-Wa-jzz" id="A4s-3S-UaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bu7-Xj-rrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
