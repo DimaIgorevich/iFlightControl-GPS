@@ -27,6 +27,8 @@ FOUNDATION_EXTERN NSString * const kCBAdvDataTxPowerLevel;
 #pragma mark - Notifications
 
 FOUNDATION_EXTERN NSString * const kUpdateBLEDeviceListNotification;
+FOUNDATION_EXTERN NSString * const kUpdateDeviceLocationNotification;
+FOUNDATION_EXTERN NSString * const kDeviceLocation;
 
 #pragma mark - BLE Service UUIDs
 

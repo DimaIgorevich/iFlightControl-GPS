@@ -27,6 +27,8 @@ NSString * const kCBAdvDataTxPowerLevel = @"kCBAdvDataTxPowerLevel";
 #pragma mark - Notifications
 
 NSString * const kUpdateBLEDeviceListNotification = @"kUpdateBLEDeviceListNotification";
+NSString * const kUpdateDeviceLocationNotification = @"kUpdateDeviceLocationNotification";
+NSString * const kDeviceLocation = @"kDeviceLocation";
 
 #pragma mark - BLE Service UUIDs
 
